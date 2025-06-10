@@ -1,4 +1,3 @@
----
 
 # **HVGNet: Hybrid Vision-Graph Network for Hyperspectral Image Classification in Crop Disease Detection**  
 
@@ -13,7 +12,7 @@ This repository contains the official implementation of the method proposed in t
 
 📌 **Note:** The paper is currently under review. The DOI will be added here once the paper is published.  
 
----
+
 
 ## **🌱 Project Overview**  
 HVGNet is a **novel hybrid deep learning architecture** integrating:  
