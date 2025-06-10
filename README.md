@@ -69,7 +69,7 @@ To run HVGNet via Python script:
 python HVGNet.py  
 ```  
 To explore interactively in a Jupyter Notebook:  
-- Open `HVGNet_demo.ipynb` in Jupyter or Google Colab for **step-by-step usage and testing**.  
+- Open `HVGNet.ipynb` in Jupyter or Google Colab for **step-by-step usage and testing**.  
 
 ---
 
@@ -129,7 +129,7 @@ _To be updated after paper publication._
 
 ## **📬 Contact**  
 - **Jiangsheng Gui:** jsgui@zstu.edu.cn  
-- **Mandol Md Sharif:** (Contact info optional)  
+- **Mandol Md Sharif:** 
 
 ---
 
