@@ -1,5 +1,3 @@
-Here's your **well-organized README file** for HVGNet. It maintains the **original content** while ensuring **clear formatting and readability** for easy copy-pasting.
-
 ---
 
 # **HVGNet: Hybrid Vision-Graph Network for Hyperspectral Image Classification in Crop Disease Detection**  
@@ -29,9 +27,9 @@ This powerful combination **improves hyperspectral image classification accuracy
 
 ## **🗃️ Repository Structure**  
 ```
-├── HVGNet.py         # Main Python file implementing the HVGNet architecture  
-├── HVGNet_demo.ipynb # Jupyter Notebook demo for model usage and testing  
-└── README.md         # Project documentation  
+├── HVGNet.py        
+├── HVGNet.ipynb 
+└── README.md         
 ```
 
 ---
@@ -138,4 +136,4 @@ The DOI will be **updated here after publication**.
 
 ---
 
-This README is now **structured for clarity** and **ready for immediate use**! Let me know if you need any refinements. 🚀  
+
