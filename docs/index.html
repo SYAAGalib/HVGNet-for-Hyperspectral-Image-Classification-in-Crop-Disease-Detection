@@ -10,9 +10,13 @@
 <style>
   :root{--bg:#0b1020;--card:#121a33;--accent:#6ae3ff;--text:#eaf2ff;--muted:#9db0d1}
   *{box-sizing:border-box}
-  html,body{height:100%}
-  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 80% -10%, rgba(106,227,255,.15), transparent 60%), radial-gradient(1200px 800px at 0% 110%, rgba(106,227,255,.12), transparent 60%), var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;padding:24px}
-  .card{max-width:880px;width:100%;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(6px);box-shadow:0 10px 35px rgba(0,0,0,.4);overflow:hidden}
+  html,body{min-height:100%}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 80% -10%, rgba(106,227,255,.15), transparent 60%), radial-gradient(1200px 800px at 0% 110%, rgba(106,227,255,.12), transparent 60%), var(--bg);color:var(--text);display:block;padding:24px;line-height:1.6}
+  .card{max-width:880px;width:100%;margin:24px auto;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(6px);box-shadow:0 10px 35px rgba(0,0,0,.4);overflow:hidden}
+  @media (max-width: 640px){
+    body{padding:12px}
+    .card{margin:12px auto}
+  }
   .header{padding:32px 32px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
   h1{margin:0 0 8px;font-size:28px;letter-spacing:.2px}
   .subtitle{margin:0;color:var(--muted);font-size:14px}
