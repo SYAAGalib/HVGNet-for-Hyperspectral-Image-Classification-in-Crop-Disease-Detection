@@ -7,6 +7,7 @@ This repository contains the official implementation of the method proposed in t
 
 ### **Authors:**  
 - Jiangsheng Gui*, Mandol Md Sharif  
+- SK. Yeasin Ahsanullah Al Galib — Code & Methodology Author (paid researcher hired by Mandol Md Sharif)  
 - **School of Computer Science and Technology, Zhejiang Sci-Tech University, Hangzhou 310018, China**  
 - *Correspondence: jsgui@zstu.edu.cn | Tel.: +86-0571-8684-3320  
 
@@ -70,7 +71,13 @@ To explore interactively in a Jupyter Notebook:
 
 ---
 
-## **📈 Results**  
+## **� External Resources**
+- Google Colab notebook: https://colab.research.google.com/drive/1eMvFkT8LE1niZKZAFyVDwdjwJCscsyZ8?usp=sharing
+- Kaggle notebook: https://www.kaggle.com/code/syaagalib/hvgnet-for-hyperspectral-image-classification-in
+
+---
+
+## **�📈 Results**  
 Experimental results and **ablation studies** show that HVGNet **outperforms traditional CNN and GCN-based models** in accuracy and robustness.  
 
 ### **Comparison of HVGNet vs. Other Models**  
@@ -114,7 +121,7 @@ Experimental results and **ablation studies** show that HVGNet **outperforms tra
 ---
 
 ## **👨‍💼 Acknowledgments**  
-I had the privilege of working as an **assistant on this project** under **Mandol Md Sharif**. It was a **valuable experience** contributing to **smart agriculture and AI research**.  
+This project was implemented and the paper was drafted by **SK. Yeasin Ahsanullah Al Galib** as a **paid researcher hired by Mandol Md Sharif**. Responsibilities included: designing the research process, writing the core codebase (HVGNet), and preparing the manuscript.  
 
 ---
 
@@ -127,6 +134,7 @@ _To be updated after paper publication._
 ## **📬 Contact**  
 - **Jiangsheng Gui:** jsgui@zstu.edu.cn  
 - **Mandol Md Sharif:** 
+- **SK. Yeasin Ahsanullah Al Galib:** syaagalib@nubtkhulna.ac.bd — Dept. of CSE, Northern University of Business and Technology Khulna (NUBTK), Khulna, Bangladesh
 
 ---
 
