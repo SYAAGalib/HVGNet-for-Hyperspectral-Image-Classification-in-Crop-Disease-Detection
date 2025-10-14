@@ -71,15 +71,16 @@ To explore interactively in a Jupyter Notebook:
 
 ---
 
-## **� External Resources**
+## **🔗 External Resources**
 - Google Colab notebook: https://colab.research.google.com/drive/1eMvFkT8LE1niZKZAFyVDwdjwJCscsyZ8?usp=sharing
 - Kaggle notebook: https://www.kaggle.com/code/syaagalib/hvgnet-for-hyperspectral-image-classification-in
 - HTML (GitHub source): https://github.com/SYAAGalib/HVGNet-for-Hyperspectral-Image-Classification-in-Crop-Disease-Detection/blob/main/SensorMDPIformatHVGNetforHyperspectralImageCl.html
 - HTML (Rendered preview): https://htmlpreview.github.io/?https://github.com/SYAAGalib/HVGNet-for-Hyperspectral-Image-Classification-in-Crop-Disease-Detection/blob/main/SensorMDPIformatHVGNetforHyperspectralImageCl.html
+- Read the paper (hosted): https://github.com/SYAAGalib/HVGNet-for-Hyperspectral-Image-Classification-in-Crop-Disease-Detection/tree/main/docs
 
 ---
 
-## **�📈 Results**  
+## **📈 Results**  
 Experimental results and **ablation studies** show that HVGNet **outperforms traditional CNN and GCN-based models** in accuracy and robustness.  
 
 ### **Comparison of HVGNet vs. Other Models**  

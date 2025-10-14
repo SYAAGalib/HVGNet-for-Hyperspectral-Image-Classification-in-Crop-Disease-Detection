@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HVGNet Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b1020;--card:#121a33;--accent:#6ae3ff;--text:#eaf2ff;--muted:#9db0d1}
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 80% -10%, rgba(106,227,255,.15), transparent 60%), radial-gradient(1200px 800px at 0% 110%, rgba(106,227,255,.12), transparent 60%), var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;padding:24px}
+  .card{max-width:880px;width:100%;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(6px);box-shadow:0 10px 35px rgba(0,0,0,.4);overflow:hidden}
+  .header{padding:32px 32px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+  h1{margin:0 0 8px;font-size:28px;letter-spacing:.2px}
+  .subtitle{margin:0;color:var(--muted);font-size:14px}
+  .content{padding:24px 32px;display:grid;gap:16px}
+  .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+  .pill{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.12);font-size:13px;color:var(--muted)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+  .btn{appearance:none;border:0;border-radius:10px;padding:12px 16px;font-weight:600;color:#06121a;background:#aaf1ff;box-shadow:0 6px 20px rgba(106,227,255,.35);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18);box-shadow:none}
+  .foot{padding:12px 32px 24px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="header">
+      <h1>HVGNet: Hybrid Vision‑Graph Network</h1>
+      <p class="subtitle">Hyperspectral Image Classification in Crop Disease Detection</p>
+    </div>
+    <div class="content">
+      <div class="metrics">
+        <div class="pill">Accuracy: <strong>0.9821</strong></div>
+        <div class="pill">F1 Score: <strong>0.9818</strong></div>
+        <div class="pill">MCC: <strong>0.9802</strong></div>
+      </div>
+
+      <section>
+        <h2>About</h2>
+        <p>This site accompanies the article: <em>"A Novel Hybrid Vision-Graph Network (HVGNet) for Hyperspectral Image Classification in Crop Disease Detection"</em>.</p>
+      </section>
+
+      <section>
+        <h2>Authors</h2>
+        <ul>
+          <li>Jiangsheng Gui*, Mandol Md Sharif</li>
+          <li>SK. Yeasin Ahsanullah Al Galib — Code &amp; Methodology Author (paid researcher hired by Mandol Md Sharif)</li>
+        </ul>
+        <p><strong>School of Computer Science and Technology, Zhejiang Sci-Tech University, Hangzhou 310018, China</strong><br/>
+        <em>Correspondence:</em> jsgui@zstu.edu.cn | Tel.: +86-0571-8684-3320</p>
+        <p><strong>Note:</strong> The paper is currently under review. The DOI will be added here once the paper is published.</p>
+      </section>
+
+      <section>
+        <h2>Project Overview</h2>
+        <p>HVGNet is a <strong>novel hybrid deep learning architecture</strong> integrating:</p>
+        <ul>
+          <li><strong>Vision Transformers (ViT):</strong> Robust spectral-spatial feature extraction</li>
+          <li><strong>Graph Neural Networks (GNN):</strong> Models non-Euclidean relationships between image regions</li>
+          <li><strong>K-Nearest Neighbors (KNN):</strong> Enhanced classification</li>
+        </ul>
+        <p>This combination improves hyperspectral image classification accuracy for crop disease detection, contributing to agricultural remote sensing and precision farming.</p>
+      </section>
+
+      <section>
+        <h2>Repository Structure</h2>
+        <pre><code>├── HVGNet.py
+├── HVGNet.ipynb 
+└── README.md</code></pre>
+      </section>
+
+      <section>
+        <h2>Requirements</h2>
+        <p><strong>Software Dependencies</strong></p>
+        <ul>
+          <li>Python 3.8–3.10</li>
+          <li>TensorFlow or PyTorch (depending on implementation)</li>
+          <li>NumPy, SciPy, Scikit-learn, Matplotlib, NetworkX, OpenCV, tqdm</li>
+        </ul>
+        <p><strong>Installation</strong></p>
+        <pre><code>uv pip install -r requirements.txt</code></pre>
+        <p><em>Recommended:</em> Use <code>uv pip</code> for faster and more reliable dependency management.</p>
+      </section>
+
+      <section>
+        <h2>Dataset</h2>
+        <p>This project was trained and tested using publicly available hyperspectral datasets. Details, links, and preprocessing steps will be provided once the paper is published.</p>
+      </section>
+
+      <section>
+        <h2>Usage</h2>
+        <p><strong>Run via Python script</strong></p>
+        <pre><code>python HVGNet.py</code></pre>
+        <p><strong>Interactive Notebook</strong></p>
+        <p>Open <code>HVGNet.ipynb</code> in Jupyter or Google Colab for step-by-step usage and testing.</p>
+      </section>
+
+      <section>
+        <h2>External Resources</h2>
+        <ul>
+          <li>Google Colab: <a href="https://colab.research.google.com/drive/1eMvFkT8LE1niZKZAFyVDwdjwJCscsyZ8?usp=sharing" target="_blank" rel="noopener">link</a></li>
+          <li>Kaggle: <a href="https://www.kaggle.com/code/syaagalib/hvgnet-for-hyperspectral-image-classification-in" target="_blank" rel="noopener">link</a></li>
+          <li>GitHub HTML source: <a href="https://github.com/SYAAGalib/HVGNet-for-Hyperspectral-Image-Classification-in-Crop-Disease-Detection/blob/main/SensorMDPIformatHVGNetforHyperspectralImageCl.html" target="_blank" rel="noopener">view</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Results</h2>
+        <p>Experimental results and ablation studies show that HVGNet outperforms traditional CNN and GCN-based models in accuracy and robustness.</p>
+        <div class="metrics">
+          <div class="pill">Accuracy: <strong>0.9821</strong></div>
+          <div class="pill">Precision: <strong>0.9815</strong></div>
+          <div class="pill">Recall: <strong>0.9821</strong></div>
+          <div class="pill">F1 Score: <strong>0.9818</strong></div>
+          <div class="pill">MCC: <strong>0.9802</strong></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Acknowledgments</h2>
+        <p>This project was implemented and the paper was drafted by <strong>SK. Yeasin Ahsanullah Al Galib</strong> as a <strong>paid researcher hired by Mandol Md Sharif</strong>. Responsibilities included designing the research process, writing the core codebase (HVGNet), and preparing the manuscript.</p>
+      </section>
+
+      <section>
+        <h2>Citation</h2>
+        <p>If you use this work in your research, please cite: (to be updated after publication).</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <ul>
+          <li><strong>Jiangsheng Gui:</strong> jsgui@zstu.edu.cn</li>
+          <li><strong>Mandol Md Sharif:</strong> —</li>
+          <li><strong>SK. Yeasin Ahsanullah Al Galib:</strong> syaagalib@nubtkhulna.ac.bd — Dept. of CSE, Northern University of Business and Technology Khulna (NUBTK), Khulna, Bangladesh</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>DOI</h2>
+        <p>The DOI will be updated here after publication.</p>
+      </section>
+
+      <section>
+        <h2>Read the Paper</h2>
+        <p>Read the full paper as a web page. It opens in a new tab.</p>
+        <div class="cta-row">
+          <a class="btn" target="_blank" rel="noopener" href="./paper.html">Read the paper</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://github.com/SYAAGalib/HVGNet-for-Hyperspectral-Image-Classification-in-Crop-Disease-Detection">GitHub Repo</a>
+        </div>
+      </section>
+    </div>
+    <div class="foot">
+      <span>Maintainer: SK. Yeasin Ahsanullah Al Galib</span>
+      <span>Contact: syaagalib@nubtkhulna.ac.bd</span>
+    </div>
+  </main>
+</body>
+</html>
