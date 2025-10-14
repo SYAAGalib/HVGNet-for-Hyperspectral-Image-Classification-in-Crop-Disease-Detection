@@ -1,0 +1,29 @@
+/* Basic content protection: disables text selection, copying cursor, image drag, and touch callouts */
+
+/* Disable selection globally */
+html, body, * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Disable image dragging */
+img {
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
+  pointer-events: none; /* prevents saving via drag; enables click if needed by JS later */
+}
+
+/* Prevent long-press menus on mobile */
+* {
+  -webkit-touch-callout: none !important;
+}
+
+/* Optional: hide selection highlight if any */
+::selection {
+  background: transparent;
+}
+
+/* Optional: block pointer-events on canvas/svg if you want to prevent context menu there too */
+/* svg, canvas { pointer-events: none; } */
